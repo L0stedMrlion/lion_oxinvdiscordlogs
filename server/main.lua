@@ -94,19 +94,3 @@ AddEventHandler('onResourceStop', function(resource)
         pcall(function() oxInventory:removeHooks(hookId) end)
     end
 end)
-
-RegisterCommand('lionlogs_test', function(source, args)
-    if source ~= 0 and not IsPlayerAceAllowed(source, 'lion_oxinvdiscordlogs.test') then return end
-
-    local category = args[1] or 'evidence'
-    local sent = webhook.send(category, {
-        title = 'Webhook Test',
-        description = 'This is a preview of the configured Discord webhook appearance.',
-        fields = {
-            { name = 'Status', value = 'Configuration loaded successfully.', inline = true },
-            { name = 'Category', value = ('`%s`'):format(category), inline = true }
-        }
-    })
-
-    print(('[lion_oxinvdiscordlogs] Test for "%s": %s'):format(category, sent and 'request queued' or 'not sent'))
-end, false)
