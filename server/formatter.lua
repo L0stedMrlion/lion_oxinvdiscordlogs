@@ -4,7 +4,7 @@ local oxInventory = exports.ox_inventory
 local formatter = {}
 
 local function trim(value, maxLength)
-    local output = tostring(value == nil and 'Unavailable' or value)
+    local output = tostring(value == nil and 'Unavailable' or value):gsub('\226\128\162', '')
     if #output <= maxLength then return output end
 
     output = output:sub(1, maxLength - 3)
