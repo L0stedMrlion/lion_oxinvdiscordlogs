@@ -39,4 +39,8 @@ Take a look at how the Discord logs appear in action.
   <img src="https://github.com/user-attachments/assets/c08b5488-e460-464a-8d96-0bb6427cd168" width="245" alt="Discord Log Preview 5">
 </p>
 
+## 🦁 Support
+
+- If you need any support just contact me on my Discord. I'm named there **lostedmrlion** or you click on [this](https://discord.com/users/710549603216261141).
+
 
